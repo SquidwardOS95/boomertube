@@ -6,8 +6,8 @@
 <style>
 
 body{
-font-family:Arial;
-background:#f9f9f9;
+font-family:Arial, Helvetica, sans-serif;
+background:#f1f1f1;
 margin:0;
 }
 
@@ -19,75 +19,200 @@ display:flex;
 align-items:center;
 }
 
+#logo{
+height:40px;
+}
+
+#search{
+margin-left:20px;
+}
+
 #search input{
-width:400px;
+width:420px;
 padding:6px;
+border:1px solid #999;
+}
+
+#search button{
+padding:6px 10px;
+}
+
+#upload{
+margin-left:auto;
+background:#cc181e;
+color:white;
+border:none;
+padding:7px 12px;
+cursor:pointer;
 }
 
 #container{
 display:flex;
+width:1100px;
+margin:auto;
+margin-top:20px;
 }
 
 #sidebar{
 width:180px;
 background:white;
-border-right:1px solid #ccc;
+border:1px solid #ddd;
 padding:10px;
+height:500px;
 }
 
-#videos{
+#sidebar a{
+display:block;
+color:#0033cc;
+text-decoration:none;
+padding:6px;
+font-size:13px;
+}
+
+#content{
 flex:1;
-padding:20px;
+margin-left:20px;
+}
+
+.section{
+background:white;
+border:1px solid #ddd;
+padding:10px;
+margin-bottom:20px;
+}
+
+.videos{
 display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:15px;
 }
 
 .video{
-background:white;
-border:1px solid #ddd;
-padding:6px;
+font-size:13px;
 }
 
 .video img{
 width:100%;
+border:1px solid #ccc;
 }
 
 .title{
 color:#0033cc;
-font-size:13px;
+margin-top:4px;
+}
+
+.meta{
+color:gray;
+font-size:11px;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <div id="header">
-<b>BoomerTube</b>
+
+<img id="logo" src="https://files.catbox.moe/dnslo3.png">
 
 <div id="search">
-<input placeholder="Search videos">
+<input placeholder="Search">
 <button>Search</button>
 </div>
+
+<button id="upload">Upload</button>
+
 </div>
 
 <div id="container">
 
 <div id="sidebar">
-<b>Browse</b><br>
-Home<br>
-Videos<br>
-Channels<br>
-Community
+
+<b>Navigation</b>
+
+<a href="#">Home</a>
+<a href="#">Videos</a>
+<a href="#">Channels</a>
+<a href="#">Community</a>
+<a href="#">History</a>
+
+<br>
+
+<b>Account</b>
+
+<a href="signin.html">Sign In</a>
+<a href="register.html">Register</a>
+
 </div>
 
-<div id="videos">
+<div id="content">
+
+<div class="section">
+
+<h3>Featured Videos</h3>
+
+<div class="videos">
 
 <div class="video">
-<img src="https://via.placeholder.com/200x120">
+<img src="https://via.placeholder.com/160x90">
 <div class="title">How to Burn a CD (2007)</div>
+<div class="meta">12,431 views</div>
+</div>
+
+<div class="video">
+<img src="https://via.placeholder.com/160x90">
+<div class="title">Windows XP Tutorial</div>
+<div class="meta">8,220 views</div>
+</div>
+
+<div class="video">
+<img src="https://via.placeholder.com/160x90">
+<div class="title">Using a Floppy Disk</div>
+<div class="meta">3,201 views</div>
+</div>
+
+<div class="video">
+<img src="https://via.placeholder.com/160x90">
+<div class="title">Internet Explorer Tips</div>
+<div class="meta">9,100 views</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h3>Recently Added</h3>
+
+<div class="videos">
+
+<div class="video">
+<img src="https://via.placeholder.com/160x90">
+<div class="title">Installing Windows 95</div>
+<div class="meta">1,420 views</div>
+</div>
+
+<div class="video">
+<img src="https://via.placeholder.com/160x90">
+<div class="title">How to Send Email</div>
+<div class="meta">2,030 views</div>
+</div>
+
+<div class="video">
+<img src="https://via.placeholder.com/160x90">
+<div class="title">Computer Basics</div>
+<div class="meta">900 views</div>
+</div>
+
+<div class="video">
+<img src="https://via.placeholder.com/160x90">
+<div class="title">Fax Machine Review</div>
+<div class="meta">620 views</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
