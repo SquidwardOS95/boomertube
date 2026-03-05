@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BoomerTube</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f9f9f9;
+margin:0;
+}
+
+#header{
+background:white;
+border-bottom:1px solid #ccc;
+padding:10px;
+display:flex;
+align-items:center;
+}
+
+#search input{
+width:400px;
+padding:6px;
+}
+
+#container{
+display:flex;
+}
+
+#sidebar{
+width:180px;
+background:white;
+border-right:1px solid #ccc;
+padding:10px;
+}
+
+#videos{
+flex:1;
+padding:20px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+}
+
+.video{
+background:white;
+border:1px solid #ddd;
+padding:6px;
+}
+
+.video img{
+width:100%;
+}
+
+.title{
+color:#0033cc;
+font-size:13px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="header">
+<b>BoomerTube</b>
+
+<div id="search">
+<input placeholder="Search videos">
+<button>Search</button>
+</div>
+</div>
+
+<div id="container">
+
+<div id="sidebar">
+<b>Browse</b><br>
+Home<br>
+Videos<br>
+Channels<br>
+Community
+</div>
+
+<div id="videos">
+
+<div class="video">
+<img src="https://via.placeholder.com/200x120">
+<div class="title">How to Burn a CD (2007)</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
